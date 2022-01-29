@@ -81,7 +81,7 @@ const SkillData = [
     },
     {
       id:"11",
-      imgLink : "http://www.galitein.com/ga-content/uploads/2018/08/solidity2.jpg",
+      imgLink : "https://i.ibb.co/BrQJpT3/solidity2.jpg",
       imgAlt : "Solidity",
       tooltipMsg : "Solidity",
       targateLink : "https://soliditylang.org/",
