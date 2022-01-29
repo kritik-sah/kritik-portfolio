@@ -1,0 +1,616 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+:root{
+    --light-red: #ff4343;
+    --main-red: #ee3534;
+    --dark-red:#cc2c2c;
+    --light-black: #464140;
+    --main-black: #221d1c;
+    --dark-black: #141211;
+    --main-white: rgb(255, 255, 255);
+}
+.width-80{
+    width: 80%;
+}
+.spacer{
+    position: relative;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.mar-auto{
+    align-self: center;
+}
+body{
+    font-family: 'Source Code Pro', monospace!important;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: var(--light-black);
+    background:linear-gradient(180deg,#000000be  ,#000000be ) , url("https://raw.githubusercontent.com/kritik-sah/carryminati/main/img/bg.png");
+    
+}
+.navbar{
+    z-index: 2;
+}
+.navbar-nav .nav-item{
+    margin: 0.5875rem
+}
+.hero{
+    background:linear-gradient(180deg, #504f4f1e , #0f0f0f25 ), url('./img/herobg.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--main-white) 
+}
+.hero .container{
+    position: relative;
+    margin: auto;
+    z-index: 3;
+    text-shadow: 0px 0px 10px #ee3534;
+}
+
+
+.profile{
+    height: 150px;
+    width: 150px;
+    border:3px solid #ffffff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px #ee3534;
+    margin-bottom: 2rem !important;
+    
+}
+.about{
+    position: relative;
+    display: block;
+    background-color: var(--main-black);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--dark-black);
+
+}
+.txt-u-line{
+    display: inline-block;
+    padding: 2px;
+    border-bottom: 3px solid var(--main-red)  ;
+}
+.luffy{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    
+}
+
+.m-10{
+    margin: 10px;
+}
+.card-m-w{
+    max-width: 45%;
+    background-color: var(--main-black);
+    position: relative;
+    display: inline-block;
+    margin: 30px 0%;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--dark-black);
+}
+.card-img{
+    height: 100% ;
+    width: 173px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.heading-center{
+    text-align: center;
+    text-decoration: underline solid var(--main-red) 3px;
+}
+.paginationBttns{
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationBttns a {
+    padding: 5px 10px;
+    margin: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid var(--main-white);
+    color: var(--light-red);
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: var(--main-white);
+    background-color: var(--main-red);
+
+  }
+  
+  .paginationActive a {
+    color:var(--main-white);
+    background-color: var(--dark-red);
+    box-shadow: 0px 0px 20px var(--dark-black);
+  }
+  
+  .paginationDisabled a {
+    color: var(--main-white);
+    background-color: var(--light-black);
+  }
+.skills{
+    display: inline-block;
+    margin-left: 20px;
+
+}
+.skillbadge{
+    margin-left: -20px;
+    padding: 3px;
+    background-color: var(--dark-black);
+}
+
+.skillbadge:hover img{
+    height: 40px;
+    box-shadow: 0px 0px 10px  #ffe600; 
+}
+.skills:hover{
+    margin-left: 0px;
+}
+.skills:hover .skillbadge{
+    margin-left: 2px;
+}
+.footer{
+    background-color: var(--main-black);
+    box-shadow: 0px 0px 20px var(--dark-black);
+}
+footer ul{
+    padding: 0;
+    margin:  10px;
+}
+footer li{
+    
+    list-style: square;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+.top{
+    z-index: 99999;
+    position: sticky;
+    top: 99vh;
+    margin: 10px;
+    float: right;
+}
+
+.glasscard{
+    backdrop-filter: blur(1px) saturate(137%);
+    -webkit-backdrop-filter: blur(1px) saturate(137%);
+    background-color: rgba(0, 0, 0, 0.68);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding:3rem 2rem;
+}
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    .profile{
+        border:5px solid #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #ee3534;
+        margin-bottom: 15px;
+    }
+      .luffy{
+          display: none;
+      }
+      .card-m-w{
+        max-width: 100%;
+        background-color: var(--main-black);
+        position: relative;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .heading-center{
+        text-align: center;
+        text-decoration: underline solid var(--main-red) 3px;
+        margin-bottom: 20px;
+    }
+
+
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+    /* Styles */
+    .card-m-w{
+        position: relative;
+        max-width: 100%;
+        background-color: var(--main-black);
+        display: inline-block;
+        margin: 30px 0%;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-container{
+        margin: auto;
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    .card-m-w{
+        position: relative;
+        max-width: 100%;
+        background-color: var(--main-black);
+        display: inline-block;
+        margin: 30px 0%;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-container{
+        margin: auto;
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+    .hero .container{
+        position: relative;
+        margin: auto;
+        z-index: 3;
+        text-shadow: 0px 0px 10px #ee3534;
+    }
+    .profile{
+        border:5px solid #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #ee3534;
+        margin-bottom: 15px;
+    }
+    .luffy{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+    .card-m-w{
+        position: relative;
+        max-width: 80%;
+        background-color: var(--main-black);
+        display: inline-block;
+        margin: 30px 1%;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-container{
+        margin: auto;
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    .hero .container{
+        text-align: center;
+        position: relative;
+        text-align: center;
+        margin: auto;
+        z-index: 3;
+        text-shadow: 0px 0px 10px #ee3534;
+    }
+    .profile{
+        border:5px solid #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #ee3534;
+        margin-bottom: 15px;
+    }
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    .hero .container{
+        position: relative;
+        text-align: center;
+        margin: auto;
+        z-index: 3;
+        text-shadow: 0px 0px 10px #ee3534;
+    }
+    .profile{
+        border:5px solid #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #ee3534;
+        margin-bottom: 15px;
+    }
+    .luffy{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+    .card-m-w{
+        position: relative;
+        max-width: 80%;
+        background-color: var(--main-black);
+        display: inline-block;
+        margin: 30px 2%;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-container{
+        margin: auto;
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    }
+    /**********
+    iPad 3
+    **********/
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    .hero .container{
+        position: relative;
+        text-align: center;
+        margin: auto;
+        z-index: 3;
+        text-shadow: 0px 0px 10px #ee3534;
+    }
+    .profile{
+        border:5px solid #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #ee3534;
+        margin-bottom: 15px;
+    }
+    .luffy{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+    .card-m-w{
+        position: relative;
+        max-width: 80%;
+        background-color: var(--main-black);
+        display: inline-block;
+        margin: 30px 2%;
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-container{
+        margin: auto;
+    }
+    .card-img{
+        height: 250px ;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1224px) {
+    /* Styles */
+    .card-m-w{
+        max-width: 45%;
+        background-color: var(--main-black);
+        position: relative;
+        display: inline-block;
+        margin: 30px 2%;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-img{
+        height: 100% ;
+        width: 173px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .heading-center{
+        text-align: center;
+        text-decoration: underline solid var(--main-red) 3px;
+    }
+    }
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+    .card-m-w{
+        max-width: 45%;
+        background-color: var(--main-black);
+        position: relative;
+        display: inline-block;
+        margin: 30px 5%;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px var(--dark-black);
+    }
+    .card-img{
+        height: 100% ;
+        width: 173px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .heading-center{
+        text-align: center;
+        text-decoration: underline solid var(--main-red) 3px;
+    }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+
+.hero .container{
+    position: relative;
+
+    text-align: center;
+    margin: auto;
+    z-index: 3;
+    text-shadow: 0px 0px 10px #ee3534;
+}
+.profile{
+
+    border:5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #ee3534;
+    margin-bottom: 15px;
+}
+.luffy{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.card-m-w{
+    position: relative;
+    max-width: 80%;
+    background-color: var(--main-black);
+    display: inline-block;
+    margin: 30px 10%;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--dark-black);
+}
+.card-container{
+    margin: auto;
+}
+.card-img{
+    height: 250px ;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+    
+  }
+@media (max-width: 800px) {
+  
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+   
+  .profile{
+
+    border:5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #ee3534;
+    margin-bottom: 15px;
+}
+  .luffy{
+      display: none;
+  }
+  .card-m-w{
+    max-width: 100%;
+    background-color: var(--main-black);
+    position: relative;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--dark-black);
+}
+.card-img{
+    height: 250px ;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card-img:hover{
+    position: static;
+    z-index: 2;
+    height: 250px;
+    width: 100%;
+}
+.heading-center{
+    text-align: center;
+    text-decoration: underline solid var(--main-red) 3px;
+    margin-bottom: 20px;
+}
+    
+}
+@media only screen and (min-width : 321px) {
+     Smartphones (landscape) ----------- 
+    .profile{
+       height: 20%;
+       width: 20%;
+       border:5px solid #ffffff;
+       border-radius: 5px;
+       box-shadow: 0px 0px 15px #ee3534;
+       margin-bottom: 15px;
+   }
+   
+       }
+
+  
+ */
